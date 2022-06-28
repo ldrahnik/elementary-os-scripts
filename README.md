@@ -3,6 +3,7 @@
 - Disabling/Enabling camera
 - Disabling/Enabling microphone
 - Do a screenshot of selection
+- Show/Hide screen keyboard icon
 
 Notifications are included.
 
