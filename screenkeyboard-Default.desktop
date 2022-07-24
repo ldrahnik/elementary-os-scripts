@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Screen keyboard
-Exec=bash /home/ldrahnik/projects/elementary-os-scripts/screenkeyboard.sh
+Exec=bash /home/ldrahnik/projects/elementary-os-scripts/toggle_screenkeyboard.sh
 Icon=/usr/share/icons/elementary/devices/24/input-keyboard-symbolic.svg
 Terminal=false
 Type=Application
