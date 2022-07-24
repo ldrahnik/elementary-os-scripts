@@ -1,9 +1,19 @@
 # elementary-os-scripts
 
+## Fn+special key functionalities
+
 - **Disabling/Enabling camera** (custom keyboard shortcut (Fn+special key) usage: `bash /home/ldrahnik/projects/elementary-os-scripts/camera.sh`)
 - **Disabling/Enabling microphone** (custom keyboard shortcut (Fn+special key) usage: `sh /home/ldrahnik/projects/elementary-os-scripts/microphone.sh`)
+- **Disabling/Enabling touchpad** (custom keyboard shortcut (Fn+special key) usage: `bash /home/ldrahnik/projects/elementary-os-scripts/touchpad.sh`)
 - **Do a screenshot of selection** (custom keyboard shortcut (Fn+special key) usage: `sh /home/ldrahnik/projects/elementary-os-scripts/screenshot.sh`)
+
+## Plank icon
+
 - **Show/Hide onboard keyboard (script & icon for dock)** (useful for 2v1 devices when is mode changed to tablet and you want imediately or by icon show onboard keyboard)
+
+## On startup
+
+- **Disabling bluetooth** (startup script usage: `sh /home/ldrahnik/projects/elementary-os-scripts/disable_bluetooth.sh`)
 
 Notifications are included.
 
