@@ -1,11 +1,12 @@
 # elementary-os-scripts
 
-## Fn+special key functionalities
+## Special keys functionalities
 
 - **Disabling/Enabling camera** (custom keyboard shortcut (Fn+special key) usage: `bash /home/ldrahnik/projects/elementary-os-scripts/toggle_camera.sh`)
 - **Disabling/Enabling microphone** (custom keyboard shortcut (Fn+special key) usage: `sh /home/ldrahnik/projects/elementary-os-scripts/toggle_microphone.sh`)
 - **Disabling/Enabling touchpad** (custom keyboard shortcut (Fn+special key) usage: `bash /home/ldrahnik/projects/elementary-os-scripts/toggle_touchpad.sh`)
 - **Do an area screenshot** (custom keyboard shortcut (Fn+special key) usage: `sh /home/ldrahnik/projects/elementary-os-scripts/area_screenshot.sh`)
+- **Run calculator** (custom keyboard shortcut (key `XF86Calculator` has to be added via `dconf` `/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/customX/binding`) with command: `io.elementary.calculator`)
 
 ## Plank icon
 
@@ -19,7 +20,6 @@
 
 - [ ] (Possible duplication of microphone sh script - exists already - standart special functions are covered (may be existing in elementary wingpanel idk) and might be triggered / imitated, https://elementaryos.stackexchange.com/questions/29787/how-rebind-keys-on-which-elementary-os-special-keys-functions-by-default-are-bou)
 - [ ] (Screenshots are not saved clipboard neither to `Screenshots` folder)
-- [ ] (Calculator is not shown when is sent `KEY_CALC`)
 
 ## Credits
 
