@@ -16,6 +16,24 @@
 
 - **Disabling bluetooth** (startup script usage: `sh /home/ldrahnik/projects/elementary-os-scripts/disable_bluetooth.sh`)
 
+## System rules
+
+- **Change brightness on power supply mode change (AC/battery)**\
+Create file `80-power_supply.rules` in user rules `/usr/lib/udev/rules.d` or `/etc/udev/rules.d`:\
+`
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", RUN+="/home/ldrahnik/projects/elementary-os-scripts/battery_mode.sh"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", RUN+="/home/ldrahnik/projects/elementary-os-scripts/ac_mode.sh"
+`\
+Allow executing:\
+`
+chmod +x /home/ldrahnik/projects/elementary-os-scripts/battery_mode.sh
+chmod +x /home/ldrahnik/projects/elementary-os-scripts/ac_mode.sh
+`\
+Reload udev rules:\
+`
+sudo udevadm control --reload-rules && udevadm trigger
+`
+
 ## TODO
 
 - [ ] (Possible duplication of microphone sh script - exists already - standart special functions are covered (may be existing in elementary wingpanel idk) and might be triggered / imitated, https://elementaryos.stackexchange.com/questions/29787/how-rebind-keys-on-which-elementary-os-special-keys-functions-by-default-are-bou)
