@@ -16,6 +16,7 @@
 ## On startup
 
 - **Disabling bluetooth** (startup script usage: `sh /home/ldrahnik/projects/elementary-os-scripts/disable_bluetooth.sh`)
+- **Enable ac or battery mode** (startup script usage `bash /home/ldrahnik/projects/elementary-os-scripts/enable_ac_or_battery_mode.sh`)
 
 ## System rules
 
@@ -41,7 +42,6 @@ sudo udevadm control --reload-rules && udevadm trigger
 
 - [ ] (Possible duplication of microphone sh script - exists already - standart special functions are covered (may be existing in elementary wingpanel idk) and might be triggered / imitated, https://elementaryos.stackexchange.com/questions/29787/how-rebind-keys-on-which-elementary-os-special-keys-functions-by-default-are-bou)
 - [ ] (Screenshots are not saved clipboard neither to `Screenshots` folder)
-- [ ] (Lower brightness when is laptop unplugged and runs from battery even after start)
 
 ## Credits
 
