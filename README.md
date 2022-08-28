@@ -6,7 +6,8 @@
 - **Disabling/Enabling microphone** (custom keyboard shortcut (Fn+special key) usage: `sh /home/ldrahnik/projects/elementary-os-scripts/toggle_microphone.sh`)
 - **Disabling/Enabling touchpad** (custom keyboard shortcut (Fn+special key) usage: `bash /home/ldrahnik/projects/elementary-os-scripts/toggle_touchpad.sh`)
 - **Do an area screenshot** (custom keyboard shortcut (Fn+special key) usage: `sh /home/ldrahnik/projects/elementary-os-scripts/area_screenshot.sh`)
-- **Run calculator** (custom keyboard shortcut (key `XF86Calculator` has to be added via `dconf` `/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/customX/binding`) with command: `io.elementary.calculator` | `flatpak run io.elementary.calculator`)
+- **Run calculator** (custom keyboard shortcut (key `XF86Calculator` has to be added via `dconf` `/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/customX/binding`) with command: `io.elementary.calculator` | `flatpak run io.elementary.calculator`, key for calculator can be tested with command `xdotool key XF86Calculator`)
+- **Toggle calculator** (custom keyboard shortcut (key `XF86Calculator` has to be added via `dconf` `/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/customX/binding`) with command: `bash /home/ldrahnik/projects/elementary-os-scripts/toggle_calculator.sh`, key for calculator can be tested with command `xdotool key XF86Calculator`)
 
 ## Plank icon
 
