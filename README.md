@@ -37,6 +37,10 @@ Reload udev rules:
 sudo udevadm control --reload-rules && udevadm trigger
 ```
 
+## TODO
+
+- [ ] (Battery or AC mode script when is laptop started needs sudo)
+
 ## Credits
 
 [how-can-i-disable-my-webcam](https://askubuntu.com/questions/166809/how-can-i-disable-my-webcam)
