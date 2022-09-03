@@ -15,11 +15,10 @@
 ## On startup
 
 - **Disabling bluetooth** (startup script usage: `sh /home/ldrahnik/projects/elementary-os-scripts/disable_bluetooth.sh`)
-- **Enable ac or battery mode** (startup script usage `bash /home/ldrahnik/projects/elementary-os-scripts/enable_ac_or_battery_mode.sh`)
 
 ## Drivers
 
-- **Change brightness on power supply mode change and when is laptop started/woken up from suspend (AC/battery)** ([power-supply-mode-switcher-driver]( https://github.com/ldrahnik/power-supply-mode-switcher-driver))
+- **Allow modify AC and battery mode (e.g. change brightness)** ([power-supply-mode-switcher-driver]( https://github.com/ldrahnik/power-supply-mode-switcher-driver))
 
 ## Credits
 
