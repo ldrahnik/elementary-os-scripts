@@ -9,7 +9,20 @@
 
 ## Plank icon
 
-- **Show/Hide onboard keyboard (script & icon for dock)** (useful for 2v1 devices when is mode changed to tablet and you want imediately or by icon show onboard keyboard)
+- **Show/Hide onboard keyboard (script & icon for dock, useful for 2v1 devices when is mode changed to tablet and you want imediately or by icon show onboard keyboard)**
+
+```
+$ sudo gedit /usr/share/applications/screenkeyboard.desktop
+```
+```
+[Desktop Entry]
+Name=Screen keyboard
+Exec=bash /home/ldrahnik/projects/elementary-os-scripts/toggle_screenkeyboard.sh
+Icon=/usr/share/icons/elementary/devices/24/input-keyboard-symbolic.svg
+Terminal=false
+Type=Application
+StartupNotify=true
+```
 
 ## Credits
 
