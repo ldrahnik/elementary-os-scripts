@@ -14,7 +14,7 @@
 
 ## On startup
 
-- **Disabling bluetooth** (startup script usage: `sh /home/ldrahnik/projects/elementary-os-scripts/disable_bluetooth.sh`)
+~~- **Disabling bluetooth** (startup script usage: `sh /home/ldrahnik/projects/elementary-os-scripts/disable_bluetooth.sh`)~~ [TLP](https://linrunner.de/tlp/faq/radio.html) does by default
 
 ## Drivers
 
