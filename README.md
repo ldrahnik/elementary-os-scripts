@@ -1,5 +1,13 @@
 # elementary-os-scripts
 
+# Install
+
+```
+git clone git@github.com:ldrahnik/elementary-os-scripts.git
+cd elementary-os-scripts
+chmod +x *.sh
+```
+
 ## Special keys functionalities
 
 - **Disabling/Enabling camera** (custom keyboard shortcut (Fn+special key) usage: `bash /home/ldrahnik/projects/elementary-os-scripts/toggle_camera.sh`)
