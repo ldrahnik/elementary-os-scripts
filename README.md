@@ -17,7 +17,7 @@ chmod +x *.sh
 
 ## Plank icon
 
-- **Show/Hide onboard keyboard (script & icon for dock, useful for 2v1 devices when is mode changed to tablet and you want imediately or by icon show onboard keyboard)**
+- **Show/Hide onboard keyboard (script & icon for dock, useful for 2v1 devices when is mode changed to tablet and you want imediately or by icon show onboard keyboard, dock can be setup `onboard Settings` -> `Window` -> `Window options` -> `Docking` -> check `Dock to screen edge`)**
 
 ```
 $ sudo gedit /usr/share/applications/screenkeyboard.desktop
