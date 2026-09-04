@@ -36,6 +36,9 @@ Categories=Utility;
 ## Fix no-hiding mode of dock using plank icon
 
 ```
+$ sudo gedit /home/ldrahnik/.local/share/applications/plank-refresh.desktop
+```
+```
 [Desktop Entry]
 Type=Application
 Name=Refresh plank
