@@ -13,7 +13,5 @@ fi
 # switch to something else
 dconf write "$KEY" "$TEMP"
 
-sleep 0.2
-
 # and set up back none
 dconf write "$KEY" "'none'"
