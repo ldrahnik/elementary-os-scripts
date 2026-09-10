@@ -42,7 +42,7 @@ $ sudo gedit /home/ldrahnik/.local/share/applications/plank-refresh.desktop
 [Desktop Entry]
 Type=Application
 Name=Refresh plank
-Exec=/home/ldrahnik/projects/elementary-os-scripts/plank_refresh.sh
+Exec=bash /home/ldrahnik/projects/elementary-os-scripts/plank_refresh.sh
 Icon=plank
 Terminal=false
 Categories=Utility;
