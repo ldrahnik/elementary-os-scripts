@@ -3,9 +3,9 @@
 # Install
 
 ```
-git clone git@github.com:ldrahnik/elementary-os-scripts.git
-cd elementary-os-scripts
-chmod +x *.sh
+$ git clone git@github.com:ldrahnik/elementary-os-scripts.git
+$ cd elementary-os-scripts
+$ chmod +x *.sh
 ```
 
 ## Special keys functionalities
@@ -46,6 +46,16 @@ Exec=bash /home/ldrahnik/projects/elementary-os-scripts/plank_refresh.sh
 Icon=plank
 Terminal=false
 Categories=Utility;
+```
+
+## Decreases laptop display brightness when is external monitor connected
+
+```
+$ sudo tee /etc/udev/rules.d/99-external-monitor-backlight.rules >/dev/null <<'EOF'
+ACTION=="change", SUBSYSTEM=="drm", KERNEL=="card[0-9]*", ENV{HOTPLUG}=="1", RUN+="/usr/bin/systemd-run --no-block --collect --unit=external-monitor-backlight-$env{SEQNUM}.service /home/ldrahnik/projects/elementary-os-scripts/external_monitor_backlight.sh"
+EOF
+
+$ sudo udevadm control --reload-rules
 ```
 
 ## Credits
