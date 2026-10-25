@@ -48,7 +48,9 @@ Terminal=false
 Categories=Utility;
 ```
 
-## Decreases laptop display brightness when is external monitor connected
+## Decreases laptop display brightness
+
+- Each time when is external monitor plugged and increases when is unplugged
 
 ```
 $ sudo tee /etc/udev/rules.d/99-external-monitor-backlight.rules >/dev/null <<'EOF'
@@ -56,6 +58,39 @@ ACTION=="change", SUBSYSTEM=="drm", KERNEL=="card[0-9]*", ENV{HOTPLUG}=="1", RUN
 EOF
 
 $ sudo udevadm control --reload-rules
+```
+
+- After the boot
+
+```
+$ sudo visudo -f /etc/sudoers.d/external-monitor-backlight
+$ ldrahnik ALL=(root) NOPASSWD: /home/ldrahnik/projects/elementary-os-scripts/external_monitor_backlight.sh
+
+$ chmod 755 /home/ldrahnik/projects/elementary-os-scripts/external_monitor_backlight.sh
+
+$ cat > ~/.config/autostart/external-monitor-backlight.desktop <<'EOF'
+[Desktop Entry]
+Type=Application
+Name=Decreases laptop display brightness
+Exec=sudo -n /home/ldrahnik/projects/elementary-os-scripts/external_monitor_backlight.sh
+Icon=video-display
+Terminal=false
+X-GNOME-Autostart-enabled=true
+EOF
+```
+
+- Manually using created plank icon
+
+```
+$ cat > ~/.local/share/applications/external-monitor-backlight.desktop <<'EOF'
+[Desktop Entry]
+Type=Application
+Name=Decreases laptop display brightness
+Exec=sudo -n /home/ldrahnik/projects/elementary-os-scripts/external_monitor_backlight.sh
+Icon=video-display
+Terminal=false
+X-GNOME-Autostart-enabled=true
+EOF
 ```
 
 ## Credits
