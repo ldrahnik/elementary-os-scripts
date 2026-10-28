@@ -93,6 +93,21 @@ X-GNOME-Autostart-enabled=true
 EOF
 ```
 
+## Sharing only part of the screen on ultra-width monitor
+
+```
+$ cat > ~/.local/share/applications/share-middle-region.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Name=Teams - Middle Region
+Exec=bash /home/ldrahnik/projects/elementary-os-scripts/share_middle_region.sh
+Icon=video-display
+Terminal=false
+Categories=AudioVideo;Video;
+StartupNotify=false
+EOF
+```
+
 ## Credits
 
 [how-can-i-disable-my-webcam](https://askubuntu.com/questions/166809/how-can-i-disable-my-webcam)
